@@ -31,27 +31,25 @@
 <header>
   <p class="brand">Overtrace</p>
   <h1>Privacy Policy</h1>
-  <p class="meta">Last updated 24 September 2026</p>
+  <p class="meta">Last updated 24 November 2026</p>
 </header>
 
-<p>Overtrace does not collect, transmit, sell, or share personal data. There is no account,
-no analytics, no advertising, and no third-party SDK of any kind.</p>
+<p>Overtrace does not require an account and never uploads, sells, or shares your personal photos or drawing references. There is no advertising and no cross-app tracking.</p>
 
 <h2>What stays on your device</h2>
-<p>Reference images you add and the work settings Overtrace saves for them are stored only on the device where you added them. Overtrace does not upload that library anywhere. Deleting the app removes this local data.</p>
+<p>Reference images you add and the work settings Overtrace saves for them are stored locally by the app on your device (standard iOS device backups may include local app storage unless disabled in iOS Settings). Overtrace does not upload that library anywhere. Deleting the app removes this local data.</p>
 
 <h2>Camera and photos</h2>
-<p>Camera access is used only to show the live view you trace on top of. The camera image is
-displayed on screen and is never recorded, saved, or transmitted by Overtrace. Photo library access is used only when you choose a picture to use as a reference. If the selected picture is stored in iCloud Photos, Apple Photos may retrieve it before passing the selected image to Overtrace.</p>
+<p>Camera access is used only to show the live view you trace on top of or to capture a reference photo when you choose. Live camera frames are never recorded or transmitted by Overtrace. Photo library access is used only when you choose a picture to use as a reference. If the selected picture is stored in iCloud Photos, Apple Photos may retrieve it before passing the selected image to Overtrace.</p>
 
-<h2>Tracking</h2>
-<p>Overtrace does not track you. The app's privacy manifest declares
-<code>NSPrivacyTracking = false</code>, an empty list of collected data types, and a single
+<h2>Diagnostics and tracking</h2>
+<p>Overtrace does not track you across apps or websites. Pseudonymous product-interaction and subscription-plan outcome diagnostics (such as screen flow, plan selected, verified purchase completion, or restore outcome) are sent to PostHog EU together with a randomly generated app-installation UUID stored in local <code>UserDefaults</code>. That installation identifier allows Overtrace to measure multi-session funnel reliability within a single app installation, is deleted when the app is uninstalled, and is never linked to a user account, name, email address, Apple Account, or advertising identifier. Accordingly, the app's privacy manifest declares
+<code>NSPrivacyTracking = false</code>, unlinked non-tracking <code>NSPrivacyCollectedDataTypeDeviceID</code>, <code>NSPrivacyCollectedDataTypeProductInteraction</code>, and <code>NSPrivacyCollectedDataTypePurchaseHistory</code> (<code>NSPrivacyCollectedDataTypeLinked = false</code>) for analytics, and a single
 accessed API category — <code>UserDefaults</code>, declared under reason <code>CA92.1</code>,
-used to remember your own settings on this device.</p>
+used to remember your own settings and random installation UUID on this device.</p>
 
 <h2>Purchases</h2>
-<p>Weekly, monthly, and annual subscriptions and the one-time Lifetime purchase are processed by Apple. Overtrace never sees your payment details. Apple's privacy terms govern those transactions.</p>
+<p>Weekly, monthly, and annual subscriptions and the one-time Lifetime purchase are billed and processed by Apple. Overtrace never sees your payment card or Apple Account identity; only pseudonymous plan-tier and purchase/restore outcome events keyed to the random local install identifier are recorded for app analytics as described above. Apple's privacy terms govern App Store billing transactions.</p>
 
 <h2>Children</h2>
 <p>Overtrace is rated 4+ and contains no user-generated social content, no social features, and no advertising.</p>
